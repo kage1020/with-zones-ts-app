@@ -1,25 +1,25 @@
-# Using multiple zones
+# Using multiple zones with TypeScript
 
 With Next.js you can use multiple apps as a single app using its [multi-zones feature](https://nextjs.org/docs/advanced-features/multi-zones). This is an example showing how to use it.
 
-- All pages should be unique across zones. For example, the `home` app should not have a `pages/blog/index.js` page.
+- All pages should be unique across zones. For example, the `home` app should not have a `pages/blog/index.tsx` page.
 - The `home` app is the main app and therefore it includes the rewrites that map to the `blog` app in [next.config.js](home/next.config.js)
 - The `blog` app sets [`basePath`](https://nextjs.org/docs/api-reference/next.config.js/basepath) to `/blog` so that generated pages, Next.js assets and public assets are within the `/blog` subfolder.
 
 ## How to use
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+Execute `git clone` to bootstrap the example:
 
 ```bash
-npx create-next-app --example with-zones with-zones-app
+git clone https://github.com/kage1020/with-zones-ts-app.git
 ```
 
 ```bash
-yarn create next-app --example with-zones with-zones-app
+git clone https://github.com/kage1020/with-zones-ts-app.git
 ```
 
 ```bash
-pnpm create next-app --example with-zones with-zones-app
+git clone https://github.com/kage1020/with-zones-ts-app.git
 ```
 
 With multi zones you have multiple Next.js apps over a single app, therefore every app has its own dependencies and it runs independently.
@@ -50,7 +50,7 @@ The `blog` app should be up and running in [http://localhost:4000](http://localh
 
 ## Preview
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+Preview the example live on [StackBlitz](http://stackblitz.com/) only JavaScript:
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-zones)
 
